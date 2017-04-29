@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/North/scene/North.unity
+  isLoaded: 1
+  isActive: 1
