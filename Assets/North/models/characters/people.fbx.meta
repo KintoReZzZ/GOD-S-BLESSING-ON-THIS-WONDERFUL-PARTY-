@@ -127,6 +127,58 @@ ModelImporter:
     400116: upper_arm.L
     400118: upper_arm.R
     400120: worm
+    2300000: ball
+    2300002: Crampon
+    2300004: Eskimo
+    2300006: Eskimo_2
+    2300008: fishing_rod
+    2300010: fishing_rod_2
+    2300012: fishing_rod_3
+    2300014: glasses_1
+    2300016: glasses_2
+    2300018: pick
+    2300020: pick_2
+    2300022: pick_3
+    2300024: polar_explorer
+    2300026: polar_explorer_2
+    2300028: polar_explorer_3
+    2300030: skiing_1
+    2300032: skiing_2
+    2300034: skiing_3
+    2300036: snowmobile
+    2300038: snowmobile_2
+    2300040: snowmobile_3
+    2300042: spear
+    2300044: spear_2
+    2300046: sticks
+    2300048: sticks_2
+    2300050: worm
+    3300000: ball
+    3300002: Crampon
+    3300004: Eskimo
+    3300006: Eskimo_2
+    3300008: fishing_rod
+    3300010: fishing_rod_2
+    3300012: fishing_rod_3
+    3300014: glasses_1
+    3300016: glasses_2
+    3300018: pick
+    3300020: pick_2
+    3300022: pick_3
+    3300024: polar_explorer
+    3300026: polar_explorer_2
+    3300028: polar_explorer_3
+    3300030: skiing_1
+    3300032: skiing_2
+    3300034: skiing_3
+    3300036: snowmobile
+    3300038: snowmobile_2
+    3300040: snowmobile_3
+    3300042: spear
+    3300044: spear_2
+    3300046: sticks
+    3300048: sticks_2
+    3300050: worm
     4300000: polar_explorer_3
     4300002: fishing_rod_3
     4300004: worm
@@ -226,7 +278,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -4906,7 +4958,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     serializedVersion: 2
     human: []
@@ -4924,7 +4976,7 @@ ModelImporter:
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
