@@ -90,7 +90,7 @@ using UnityEngine;
       				}
       			}
       		}
-      		transform.localPosition += velocity * Time.fixedDeltaTime;
+      		transform.localPosition += velocity * Time.fixedDeltaTime * 2.00f;
 
       		transform.Rotate(0, h * rotateSpeed, 0);
       		if (currentBaseState.nameHash == locoState){
