@@ -48,6 +48,8 @@ public class follow_me : MonoBehaviour {
 }
 
 	void Update(){
+
+
 		Vector3 currentPos = transform.position;
 		float ally_dist = Vector3.Distance(player.transform.position, currentPos);
 		float enemy_distance = 0.0f;
@@ -66,6 +68,10 @@ public class follow_me : MonoBehaviour {
 			if(enemy_distance < 2){
         anim.Play ("attack");
 				enemy.GetComponent<enemy_detect>().health--;
+				if(enemy.GetComponent<enemy_detect>().health <= 0){
+					player.GetComponent<FourWayController>().food+=10;
+					Destroy(enemy);
+				}
 			}else{
 				anim.Play ("run");
 			}

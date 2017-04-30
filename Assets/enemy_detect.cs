@@ -33,7 +33,6 @@ public class enemy_detect : MonoBehaviour {
 		if(health <= 0){
 			 anim.Play("dead");
 			if(player.GetComponent<FourWayController>().food < 10 && !dead){
-			 	player.GetComponent<FourWayController>().food+=10;
 				dead = true;
 			}
 			return;

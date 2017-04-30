@@ -11,6 +11,10 @@ using UnityEngine;
     	public float lookSmoother = 3.0f;			// a smoothing setting for camera motion
     	public bool useCurves = true;				// Curve Mecanim
     	public float useCurvesHeight = 0.5f;		// variable to use the curve
+      public bool fishing = false;
+      public bool bear = false;
+      public bool warlus = false;
+      public bool whale = false;
 
 
     	public float forwardSpeed = 7.0f;
@@ -25,10 +29,10 @@ using UnityEngine;
     	private float orgColHight;
     	private Vector3 orgVectColCenter;
 
-    	private Animator anim;							// キャラにアタッチされるアニメーターへの参照
-    	private AnimatorStateInfo currentBaseState;			// base layerで使われる、アニメーターの現在の状態の参照
+    	private Animator anim;
+    	private AnimatorStateInfo currentBaseState;
 
-    	private GameObject cameraObject;	// メインカメラへの参照
+    	private GameObject cameraObject;
 
       // Basic Animation
     	static int idleState = Animator.StringToHash("Base Layer.Idle");
@@ -155,6 +159,26 @@ using UnityEngine;
           col.center = orgVectColCenter;
         }
 
+        GameObject FindClosest(string search_by)
+      {
+          GameObject[] gos;
+          gos = GameObject.FindGameObjectsWithTag(search_by);
+          GameObject closest = null;
+          float distance = Mathf.Infinity;
+          Vector3 position = transform.position;
+          foreach (GameObject go in gos)
+          {
+              Vector3 diff = go.transform.position - position;
+              float curDistance = diff.sqrMagnitude;
+              if (curDistance < distance)
+              {
+                  closest = go;
+                  distance = curDistance;
+              }
+          }
+          return closest;
+      }
+
         void OnGUI () {
           GUIStyle style = new GUIStyle ();
           style.richText = true;
@@ -163,6 +187,21 @@ using UnityEngine;
             if (GUI.Button (new Rect (10,40,500,20), new GUIContent ("Basket Full of Tuna, Return home", null, "RETURN TO CAMP"))){
                 food=0;
             }
+
+          if (fishing ){
+
+          }
+          if (warlus ){
+
+          }
+          if (bear ){
+          GUI.Button (new Rect (100,40,500,500), new GUIContent ("naˈnuq (Polar Bear): The Inuit believed that Nanuk, the polar bear, was powerful and mighty, and they thought that he was 'almost man'. The Inuit hunters would worship this great bear because they believed that he decided if the hunters would be successful. 'In the past, the Inuit ate polar bear meat and used the fur to make warm trousers for men and kamiks (soft boots) for women' ", null, "RETURN TO CAMP"));
+          }
+          if (whale ){
+
+          }
+
+
 
         }
     }
