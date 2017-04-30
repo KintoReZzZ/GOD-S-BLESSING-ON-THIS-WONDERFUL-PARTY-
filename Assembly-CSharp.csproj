@@ -53,6 +53,7 @@
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\alaskan_controller.cs" />
+     <Compile Include="Assets\enemy_detect.cs" />
      <Compile Include="Assets\follow_camera.cs" />
      <Compile Include="Assets\follow_me.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
