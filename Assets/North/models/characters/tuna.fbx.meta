@@ -32,14 +32,30 @@ ModelImporter:
     7400002: Armature_tuna|eat
     7400004: Armature_tuna|hit
     7400006: Armature_tuna|Idle
+    7400008: Armature_tuna|dead //// Armature_tuna
+    7400010: Armature_tuna|eat //// Armature_tuna
+    7400012: Armature_tuna|hit //// Armature_tuna
+    7400014: Armature_tuna|Idle //// Armature_tuna
     9500000: //RootNode
+    11100000: //RootNode
+    11100002: 1
+    11100004: 2
+    11100006: 3
+    11100008: 3_end
+    11100010: Armature_tuna
+    11100012: Bone
+    11100014: head
+    11100016: head_2
+    11100018: head_2_end
+    11100020: tuna
     13700000: tuna
+    13700002: Bone
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
-    legacyGenerateAnimations: 4
+    legacyGenerateAnimations: 3
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
@@ -93,10 +109,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

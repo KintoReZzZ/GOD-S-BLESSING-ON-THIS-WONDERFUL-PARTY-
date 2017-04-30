@@ -57,6 +57,7 @@
      <Compile Include="Assets\enemy_detect.cs" />
      <Compile Include="Assets\follow_camera.cs" />
      <Compile Include="Assets\follow_me.cs" />
+     <Compile Include="Assets\tuna_controller.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\UnityChan\license.txt" />
