@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class follow_me : MonoBehaviour {
 
+	public GameObject player;
+
 	// Use this for initialization
 	void Start () {
-		
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void Update(){
+		transform.position = Vector3.Lerp(transform.position , player.transform.position, Time.deltaTime * 2.0f);
+		transform.rotation = player.transform.rotation;
 	}
 }
