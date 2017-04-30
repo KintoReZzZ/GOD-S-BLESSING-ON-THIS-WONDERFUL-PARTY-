@@ -1,8 +1,6 @@
 ﻿using CnControls;
 using UnityEngine;
 
-namespace CustomJoystick
-{
   [RequireComponent(typeof (Animator))]
   [RequireComponent(typeof (CapsuleCollider))]
   [RequireComponent(typeof (Rigidbody))]
@@ -19,6 +17,8 @@ namespace CustomJoystick
     	public float backwardSpeed = 2.0f;
     	public float rotateSpeed = 2.0f;
     	public float jumpPower = 3.0f;
+      public int food = 0;
+      public int people = 0;
     	private CapsuleCollider col;
     	private Rigidbody rb;
     	private Vector3 velocity;
@@ -154,5 +154,15 @@ namespace CustomJoystick
           col.height = orgColHight;
           col.center = orgVectColCenter;
         }
+
+        void OnGUI () {
+          GUIStyle style = new GUIStyle ();
+          style.richText = true;
+          GUILayout.Label("<size=20><color=red> Food :</color><color=yellow>"+food+"</color></size>  <size=20><color=red> Starving People :</color><color=yellow>"+people+"</color></size>",style);
+          if (food >= 10)
+            if (GUI.Button (new Rect (10,40,500,20), new GUIContent ("Basket Full of Tuna, Return home", null, "RETURN TO CAMP"))){
+                food=0;
+            }
+
+        }
     }
-}

@@ -14,7 +14,8 @@ public class clone_tuna : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		float value = Random.value * 100.0f;
-		if (  value > 50.0f && value < 52.0f){
+		int tuna_lenght = GameObject.FindGameObjectsWithTag("Tuna").Length;
+		if (  value > 50.0f && value < 52.0f && tuna_lenght < 50){
 			pos = transform.position;
       pos.x = pos.x + Random.value * 5;
 			pos.z = pos.z + Random.value * 5;
